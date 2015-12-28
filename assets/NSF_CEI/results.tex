@@ -1,0 +1,126 @@
+% Standard solution to the allocation mentioned in the Abstract
+\subsection{Solution to Portfolio Allocation}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.60]{figure/40Days200StocksAllocation.png}\\[-0.5cm]
+\caption{200 Stocks and 40 Day Time Series\label{fig:200_40}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.60]{figure/80Days200StocksAllocation.png}\\[-0.5cm]
+\caption{200 Stocks and 80 Day Time Series\label{fig:200_80}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.60]{figure/120Days200StocksAllocation.png}\\[-0.5cm]
+\caption{200 Stocks and 120 Day Time Series\label{fig:200_120}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.60]{figure/40Days400StocksAllocation.png}\\[-0.5cm]
+\caption{400 Stocks and 40 Day Time Series\label{fig:400_40}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.60]{figure/40Days600StocksAllocation.png}\\[-0.5cm]
+\caption{600 Stocks and 40 Day Time Series\label{fig:600_40}}
+\end{figure}
+
+\input{grantTable}
+%
+%\begin{align*}
+%\text{Simulation Time Taken 200 Stocks \& 40 Days} &= {3.7} \text{ seconds}\\
+%\text{Simulation Time Taken 200 Stocks \& 80 Days} &= {4.1} \text{ seconds}\\
+%\text{Simulation Time Taken 200 Stocks \& 120 Days} &= {5.1} \text{ seconds}\\
+%\text{Simulation Time Taken 400 Stocks \& 40 Days} &= {21.0} \text{ seconds}\\
+%\text{Simulation Time Taken 600 Stocks \& 40 Days} &= {62.4} \text{ seconds}\\
+%\end{align*}\\[-1.25cm]
+\indent \indent ~ ~ ~*Maximum individual stock tolerance of 50\% used in above cases \\[0.1cm]
+
+Quadratic programming problems (QPs) and specifically this Sharpe ratio problem can take an extraordinary amount of computational time when input parameters are applied irrationally. Computational time increases with each additional day considered in the time series.  This added time is the result of computing an extra day's residual for a given number of stocks that receive allocation.  This additional day and residual calculation, does not weigh heavily on our optimization routine's ability to solve.  The simulation time needed for 200 initial stocks considered was marginally greater in the case of an 120 day time series than in the case of a 40 day time series.  The difference in computational time is less than 2 seconds.  This tells us that within the constructs of this problem we will be able to look at  very large time horizons if we so deem it necessary.  
+%DRAFT2%More analysis on what time frame is appropriate for use in MPT models will follow in a further results section.
+
+% rewrite a lot of this....
+Regardless of the number of stocks initially being considered for allocation, the number of stocks that are chosen for optimality are fairly similar.  If choosing to allocate an investment over 200 stocks in a 40 day series, the optimization chooses a total of 12 stocks for allocation, as can be seen by the peaks in figure \ref{fig:200_40} on page \pageref{fig:200_40}.  If the optimization had to pick stocks from an initial group of 400 stocks, still in a 40 day series, it seems fairly plausible that the algorithm would find better stock choices.  Interestingly the number of stocks chosen for allocation remains at 14.  The 14 peaks in figure \ref{fig:400_40} on page \pageref{fig:400_40}, are interesting because we have just doubled the range of stock choices, and yet the optimization chooses only 14 stocks for allocation. Figure \ref{fig:600_40} on page \pageref{fig:600_40} also validates this finding.  In this plot there are 22 peaks, but many of them are small might well continue dying out as the number of stock being initially considered increases to the 3000+ stocks on the NYSE.  Small peaks of allocation may also die out if a longer time horizon is chosen.  
+
+The consistently low number of stocks chosen for allocation tells us something about the solution to this very real world problem.  They show that if you increase the number of stocks initially considered, the optimization will somehow continue to allocate in a small number of stock choices.  This trend is very strange in the context of two 200 stock increases in initial consideration for the solver.  We postulate that the optimization only needs to chose about 10-30 well performing stocks to reduce the variance considerably.  The appropriate diversification of stocks, such that the variance is reduced, does not need the full spectrum of additional initial stocks being offered.  In essence the solver is being handed far too many stocks for the reduced variance and increased return it is trying to accomplish.  
+
+In the conclusion of this report, we hope to have devised a method for pre-screening initial stocks and filtering based on a set of criteria.  By filtering the initial stocks we can remove some of the computationally challenging sifting that the solver is forced into by the abundance of stock choices.  We already see that the optimization routine takes about a minute longer to sift through 600 initial stocks then it does for the 200 initial stock case.  
+%and the area for improvement is that we already know some of these stocks will never be chosen for allocation over this time horizon; there performance was just that bad.  The optimization routine does find better stocks and moves from a total of 12 choices, up to a total around 20.  Adding unnecessary length to the variable $x$ n-column vector is probably the worst thing that can happen for this optimization routine.
+
+If we are looking to make our algorithm work realistically, and for the real world problem, then we must figure out a way of filtering the initial stocks before the optimization routine begins.  If we do not filter the stocks on the NYSE to be optimized, our algorithm will soon be unable to provide an allocation answer in less than the 15 hour time frame between market close and market open on a typical weekday.  
+
+\noindent **2nd DRAFT** How we filter the stocks to be optimized by our solver is another case, to be observed more carefully in a further results section.  
+
+% our further tests should all use a varying time horizon to assess risk, because we can easily change the time horizon and get answers.
+
+%  We aim to minimize the necessary stocks to be considered while getting  awholistic view of the market and areas we should invest.  In order to do these computations most effectibley we will need to introduce a filter on the stocks passed to the objective function to be combinatorially trailed for a good Sharpe ratio.  We look at solutions to problems that do not need the MATLAB solver to act, to solve for the specific stocks to be passed.  Hopefully the filter gives us all the best components, such that our objective solver will act like a large solver, but needing minimal computation from the Solver (we won't need a super computer).
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Efficient Frontier}
+
+\subsubsection{Varied Stocks Considered}
+
+Figure \ref{fig:frontier} shows the efficiency frontiers for various sets of data over a 40 day history. These stocks were the first of the set of stocks ordered alphabetically by ticker symbol. This was chosen for convenience, and as a semi-random collection of stocks (in terms of performance) over this time period. Large sets of stocks proved to be infeasible to solve in a reasonable amount of time, and so smaller data sets were considered to characterize the sensitivity of the solution.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.72]{figure/EF_varyStocks.png}\\
+\caption{Efficient Frontier\label{fig:frontier}}
+\end{figure}
+
+The simulated efficient frontiers in figure \ref{fig:frontier} show a diminishing return in Sharpe Ratio as diversification risk is increased; as is expected from the theory of efficiency frontiers.  Diversification risk is set by varying the maximum allowable stock allocation in portfolio.  By finding the efficiency frontier for a variety of subsets of stocks over a certain time history provides insight into a portfolios sensitivity to the increased diversification risk. For all sets of stocks between 50 and 250 stocks there is a diminished returns in Sharpe Ratio for maximum diversification risk above \~10\%, providing a value that can be used for future simulations.
+
+Additionally, variable increases in Sharpe Ratio for increased number of stocks is caused by the random assortment of stocks selected. In datasets with large increases (ie 200 to 250 stocks) there is a stock or collection of stocks that perform well over the 40 day history considered. Similarly, small changes in Sharpe Ratio correspond to additions of sets of stocks that have a poor allocation. This can be seen in the distribution of allocation over the 250 stock set seen in figure \ref{fig:250all}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.75]{figure/Allocated250Stocks40Days.png}\\
+\caption{Efficient Frontier\label{fig:250all}}
+\end{figure}
+
+There was a large percent allocation in stock 99, which corresponds to the large increase in Sharpe Ratio when moving from only the first 50 stocks to the 100 stock case. Conversely, limited allocation in stocks 100 to 150 correspond to modest increases in optimal Sharpe Ratio when that set of stocks was added.
+
+A filtering method can be created using the information gathered from figures \ref{fig:frontier} and \ref{fig:250all} to limit the number of stocks considered before the optimization algorithm, reducing the computation time. By looking at small subsets of an entire dataset, significant information can be gleaned about the ability for individual stocks to influence the Sharpe Ratio of the portfolio. If a stock in a small set has a high allocation percentage and adding that set provides a significant increase in Sharpe Ratio, then that stock would be a candidate as a potential pick for the optimal portfolio of the entire dataset. By prescreening in this manner it is possible to reduce the computation time without significantly adversely affecting the performance of the optimization
+
+\subsubsection{Varied Time Series Considered}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.75]{figure/EF100Days.png}\\
+\caption{Efficient Frontier\label{fig:EF100}}
+\end{figure}
+
+Figure \ref{fig:EF100} shows the change in optimal Sharpe Ratio as a 
+function of diversification risk, while changing the length of the time history 
+considered. Only 50 stocks were considered in this analysis to decrease 
+computation time over the large number of runs of the optimization algorithm. It is 
+apparent from the figure that as the time history considered for the optimization is 
+increased, there is only a small increase in optimal Sharpe Ratio past \~10\% 
+allocation per stock, in agreement with the variation in the similar plot where the 
+number of stocks considered was varied. This means that the efficiency frontier for 
+Sharpe Ratio vs. diversification risk is independent of the amount of time that stocks
+varied over. 
+
+What is interesting to note is that there is no appreciable trend in optimal 
+Sharpe Ratio when considering time histories of \~2months to \~5 months. The 
+optimal Sharpe Ratio (at the limit of diversification risk) fluctuates between 0.15 
+and 0.3 depending on the time period. This implies that the time history is more 
+dependent on the trends in the market over that time period, but does not say very 
+much about how this would affect the success of the portfolio. 

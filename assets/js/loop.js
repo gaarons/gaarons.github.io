@@ -85,7 +85,7 @@ jQuery( function($){
 			thumb_links: 0,				// Individual thumb links for each slide
 			slides:  	[				// Slideshow Images
 							{image : 'assets/img/sliders/slider1.jpg', title : '<div class="hero-text"><h2 class="hero-heading">Grant Aarons</h2><p> Dynamic Factor Researcher </br> Economic Policy Analyst </br> Mechanical Engineer</p></div>', thumb : '', url : ''},
-							{image : 'assets/img/sliders/slider2.jpg', title : '<div class="hero-text"><h2 class="hero-heading">PROGRAMMING</h2><p>MATLAB Analytics</p></div>', thumb : '', url : ''},
+							{image : 'assets/img/sliders/slider2.jpg', title : '<div class="hero-text"><h2 class="hero-heading">PROGRAMMING</h2><p>MATLAB <a href="https://github.com/gaarons">Analytics</a></p></div>', thumb : '', url : ''},
 							{image : 'assets/img/sliders/slider3.jpg', title : '<div class="hero-text"><h2 class="hero-heading">REFLECTION</h2><p>Solutions with a purpose</p></div>', thumb : '', url : ''},
 							{image : 'assets/img/sliders/slider4.jpg', title : '<div class="hero-text"><h2 class="hero-heading">COFFEE</h2><p>Photo blogging at <u><a href="http://coffeetrails.tumblr.com/">coffeetrails</a></u></p></div>', thumb : '', url : ''},
 							{image : 'assets/img/sliders/slider5.jpg', title : '<div class="hero-text"><h2 class="hero-heading">ENERGY</h2><p>Ecstatic about innovation</p></div>', thumb : '', url : ''}

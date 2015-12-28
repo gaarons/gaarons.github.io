@@ -1,0 +1,28 @@
+% Parameter Builds - Show explicitly how the parameters were constructed from the matlab scripts
+
+\underline {Defining R - Daily Return}
+
+\noindent $R(i,j) =$ Return Over Sequential Days Closing Prices 
+
+\noindent $i = $ Day Index $= 1 ... m$; \indent $j =$ Stock Index $= 1 ... n$ \\[0.35cm]
+\noindent for $i = 1:(size(S,1)-1)$
+
+    for $j = 1:size(S,2)$
+
+        \indent \indent $R(i,j) = \dfrac{((S(i+1,j) - S(i,j))/S(i,j))}{(S(1,j)}$
+
+    end
+
+\noindent end\\[0.5cm]
+
+
+\noindent\underline{Defining $C$ - Total Return}
+
+\noindent $C(i,j) =$ Stock Return Over Entire Series 
+
+\noindent $k =$ Stock Index $= 1 ... n$ \\[0.35cm]
+\noindent for $k = 1:size(S,2)$
+
+   \indent $C(k,:) = \dfrac{(S((size(S,1)-1),k)-S(1,k))}{S(1,k)}$
+
+\noindent end
