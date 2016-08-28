@@ -1,648 +1,478 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<title> | Grant Aarons</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="Personal Webpage">
-	<meta name="author" content="Grant Aarons">
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> | Grant Aarons</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
-	<!-- Styles -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/main.css" rel="stylesheet">
+		<!-- Fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/144precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/114precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/72precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/img/57precomposed.png">
+		<link rel="shortcut icon" href="assets/img/favicon.png">
 
-	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body id="top">
 
-	<!-- IE 9 Fallback-->
-	<!--[if IE 9]>
-		<link href="assets/css/ie.css" rel="stylesheet">
-	<![endif]-->
+		<!-- Header -->
+			<header id="header">
+				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+				<h1 style="font-size:30px"><strong>Grant M Aarons</strong></h1>
+			</header>
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements and IE Fallback-->
-	<!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.js"></script>
-	<![endif]-->
+		<!-- Main -->
+			<div id="main">
 
-	<!-- Fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/144precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/114precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/72precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="assets/img/57precomposed.png">
-	<link rel="shortcut icon" href="assets/img/favicon.png">
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Welcome to my webpage</h2>
+						</header>
+						<p>
+							&nbsp &nbsp &nbsp &nbsp I'm a native New Yorker, Mechanical Engineering graduate of the Cooper Union, and aspiring economist.  Currently living in the UK and pursuing my PhD in Economics at the London Business School.  I'm interested in econometric techniques, data analysis, machine learning, and policy. </br>
+							&nbsp &nbsp &nbsp &nbsp I like espresso, bicycle tours, road-trips, camping, BBQ, and sports (not sure whether to say soccer or football, but I like it). One day I'd like to create an analytics business with a good friend, and I'm fearful of writing one-off code.  I code in Julia, Matlab, Python, Stata, and VBA.
+							     </p>
+						<ul class="actions">
+							<li><a href="assets/tex/GrantAarons_CV.pdf" class="button">curriculum vitae</a></li>
+							<li><a href="https://grantics.wordpress.com/" class="button">my blog</a></li>
+						</ul>
+					</section>
 
-</head>
-<body id="top">
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="https://www.newyorkfed.org/research/policy/nowcast" class="image fit thumb"><img src="images/thumbs/nowcast.jpg" alt="Nowcasting" /></a>
+								<h3>FRBNY Nowcasting Model</h3>
+								<p>Applying a state-space Dynamic Factor Model approach to US GDP at the New York Fed to produce the FRBNY Nowcast. The introductory blog post can be found <a href="http://libertystreeteconomics.newyorkfed.org/2016/04/just-released-introducing-the-frbny-nowcast.html#.V8LXBZNrjdQ">here</a> with further coverage <a href="http://blogs.ft.com/gavyndavies/2016/04/20/important-developments-in-us-nowcasting/">here</a>, <a href="https://www.bloomberg.com/view/articles/2016-04-14/making-a-forecast-about-fed-bank-gdp-nowcasts">here</a>, and video <a href="http://www.bloomberg.com/news/videos/2016-04-13/introducing-the-frbny-nowcast">here</a>.</p>
+							</article>
+							<!-- <article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Forecasting Financial Conditions</h3>
+								<p>Currently, co-authoring a Factor-Augmented Vector Autoregressive (FAVAR) paper with Drs. Marc Giannoni and Ernst Schaumburg. We implement a unique algorithm that restricts estimated macroeconomic and financial block factors to be orthogonal to each other and a FFR policy instrument.  I derived a sub-routine in our convergence algorithm to simultaneously check the null space of block factor loadings.</p>
+							</article>
+						-->
+						<!--
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							
 
-	<!-- NAVBAR -->
-	<div class="navbar navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-					<span class="sr-only">Menu</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="index.html" class="navbar-brand">
-					<img src="assets/img/loop-logo-white.png" alt="Loop Logo" />
-					<h1 class="hide">Parallax HTML One-Page Template</h1>
-				</a>
-			</div>
-			<nav class="navbar-collapse collapse" id="main-nav" role="navigation">
-				<ul class="nav navbar-nav navbar-right nav-text-light">
-					<li class="active"><a href="#top">HOME</a></li>
-					<li><a href="#about">INTERESTS</a></li>
-					<li><a href="#services">SKILLS</a></li>
-					<li><a href="#works">PERSONAL</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#resume">RESUME</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<!-- END NAVBAR -->
-
-	<!-- HERO UNIT -->
-	<div id="hero-unit" class="hero-unit">
-			
-		<div class="slideshow">
-			<div class="hero-content text-right">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-4">
-							<div id="slidecaption" class="slide-caption"></div>
-							<div class="hero-buttons">
-								<a href="#about" id="btn-about" class="btn btn-info btn-lg"><i class="fa fa-arrow-circle-o-down"></i> READ MORE</a>
-								<a href="#contact" id="btn-contact" class="btn btn-primary btn-lg"><i class="fa fa-phone-square"></i> GET IN TOUCH</a>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-
-			<!-- Navigation -->
-			<div class="slide-navigation">
-				<a id="prevslide" class="load-item"><i class="fa fa-angle-left"></i></a>
-				<a id="nextslide" class="load-item"><i class="fa fa-angle-right"></i></a>
-				
-				<!-- Slide Pagination -->
-				<ul id="slide-list" class="list-inline"></ul>
-
-				<!-- Control Bar -->
-				<div id="controls-wrapper" class="load-item">
-					<div id="controls">
-						<a id="pauseplay"><i class="fa fa-pause"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	<!-- END HERO UNIT -->
-	
-
-	<!-- MAIN CONTENT -->
-	<div id="main-content" class="main-content">
-		
-		<!-- ABOUT -->
-		<div id="about" class="section about">
-			<div class="container">
-				<div class="section-heading">
-					<h2>Interests</h2>
-					<p>Applied Metrics - Dynamic Systems</p>
-					<hr />
-				</div>
-				<div class="section-content">
-					<p>I have been fascinated by transmission mechanisms since an early age and began my academic career as a Mechanical Engineer studying rigid physical systems at the Cooper Union for Advancement of Science and Art (four-year full-tuition scholar).  Unlike the steel beams and automobile chassis of my undergraduate training, the transmissions between various features of our economy are dynamic and challenging to properly identify. In the past few years I discovered a personal passion in extracting these dynamic empirical research. </p> 
-
-					<p>Working as a Research Analyst in the Macroeconomic and Monetary Studies function of the Federal Reserve Bank of New York (FRBNY) Research Group opened my eyes to the wider world of academic research.  Having seen the dedication to publishing research, and having felt the immense satisfaction so derived, I’m fully confident in my decision to pursue academic research as an economics PhD candidate.</p>
-					
-					<p>I’m interested in applied dynamics factor modeling and exploring the real-time econometric techniques of Nowcasting.  Original research I have done at the FRBNY has afforded me the first of many journal submission co-authorships.  On the policy side of affairs at the FRBNY, I have conducted financial market modeling and policy oriented structural modeling for the expected federal funds rate lift-off.  I have been tasked with considerable explicit and implicit (unconventional guidance) policy development in this historic post Great Recession and Great Easing period.</p>        
-                    </p>
-				</div>
-			</div>
-		</div>
-		<!-- END ABOUT -->
-
-		<!-- FULL-WIDTH PARALLAX -->
-		<div id="social-network" class="section full-width-parallax parallax">
-			<div class="container">
-				<h2>Find me elsewhere in the web</h2>
-				<ul class="list-inline social-icon">
-					<!-- <li class="wow rollIn" data-wow-delay='0.3s'><a href="https://www.facebook.com/grant.aarons" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
-					<!-- <li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
-					<!-- <li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a></li> -->
-					<li class="wow rollIn" data-wow-delay='0.2s'><a href="https://www.linkedin.com/pub/grant-aarons/27/437/707" data-toggle="tooltip" data-placement="bottom" title="LinkedIn: Grant Aarons"><i class="fa fa-linkedin"></i></a></li>
-					<!-- <li class="wow rollIn" data-wow-delay='0.3s'><a href="https://www.flickr.com/photos/124870502@N03/" data-toggle="tooltip" data-placement="bottom" title="Flickr"><i class="fa fa-flickr"></i></a></li> -->
-					<li class="wow rollIn" data-wow-delay='0.2s'><a href="https://github.com/gaarons" data-toggle="tooltip" data-placement="bottom" title="GitHub: Grant Aarons"><i class="fa fa-github"></i></a></li>
-					<li class="wow rollIn" data-wow-delay='0.2s'><a href="http://coffeetrails.tumblr.com/" data-toggle="tooltip" data-placement="bottom" title="Tumblr: CoffeeTrails"><i class="fa fa-tumblr"></i></a></li>
-					<li class="wow rollIn" data-wow-delay='0.2s'><a href="https://grantics.wordpress.com/" data-toggle="tooltip" data-placement="bottom" title="Wordpress: Grantics"><i class="fa fa-search-plus"></i></a></li>
-                </ul>
-			</div>
-		</div>
-		<!-- END FULL-WIDTH PARALLAX -->
-
-		<!-- SKILLS CHART -->
-		<div id="skills" class="section skills">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 text-center">
-						<div class="chart" data-percent="95"><span class="percent">95%</span></div>
-						<span class="skill-name">Managing Milestones</span>
-					</div>
-					<div class="col-md-3 text-center">
-						<div class="chart" data-percent="80"><span class="percent">80%</span></div>
-						<span class="skill-name">Economics</span>
-					</div>
-					<div class="col-md-3 text-center">
-						<div class="chart" data-percent="70"><span class="percent">70%</span></div>
-						<span class="skill-name">Mathematical Algorithms</span>
-					</div>
-					<div class="col-md-3 text-center">
-						<div class="chart" data-percent="65"><span class="percent">60%</span></div>
-						<span class="skill-name">Teaching</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END SKILLS CHART -->
-
-		<!-- SERVICES -->
-		<div id="services" class="section darker services" >
-			<div class="container" style="max-width:850px;">
-				<div class="section-heading">
-					<h2>SKILLS</h2>
-					<p>programming and research experience</p>
-					<hr />
-				</div>
-				<div class="section-content">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="service-item">
-								<span class="icon-checkmark2 service-icon"></span>
-								<div class="service-text">
-									<h3>Mathematical Modeling for Economics and Financial Engineering </br></h3>
-									<h5>EID300 at Cooper Union </h5>
-									<h5>
-									Co-Professor Thomas W. Synnott III 
-									</h5>
-									<p>
-									Structural & Reduced Form Vector Autoregression, Identification, Impulse Response, Bootstrap, Reduced Rank Approximation
-									 <!--deadlines is the most important aspect to a successful startup business and equally important in the corporate business structure.--></p>
-									<a href="courses/eid300/ProjectList.pdf" class="read-more"><span>Final Projects ...</span> <i class="i fa fa-arrow-circle-right"></i></a>
-									<a href="https://github.com/gaarons/eid300" class="read-more"><span>Lecture Code ...</span> <i class="i fa fa-arrow-circle-right"></i></a>
-								</div>
-							</div>
 						</div>
-				
-						<div class="col-md-6">
-							<div class="service-item">
-								<span class="icon-phone service-icon"></span>
-								<div class="service-text">
-									<h3>Coincident Economic Indicator (CEI)</h3>
-									<p>I produce monthly updates of the CEI for NY, NJ, and NYC.  These are single dynamic factor results from labor data. I’m independently working on a model that blends FAVAR techniques with the CEI framework, utilizing the readily available Quarterly Census of Employment and Wages (QCEW) data by industry at the 5-digit disaggregated level.  
-									</p>
-									<p style="margin-left: 30px"><a href="https://www.newyorkfed.org/research/regional_economy/coincident_summary.html" class="read-more"><span>CEI Posts ... </span> <i class="i fa fa-arrow-circle-right"></i></a><a href="assets/NSF_CEI/2016_Aarons_CEI.pdf" class="read-more"><span> Development ...</span> <i class="i fa fa-arrow-circle-right"></i></a></p>
-								</div>
-							</div>
-						</div>
-                        
-                        <div class="col-md-6">
-							<div class="service-item">
-								<span class="icon-lab service-icon"></span>
-								<div class="service-text">
-									<h3>Handcrafted Algorithms</h3>
-									<p><h4>Stock Portfolio Allocation by Sharpe's Ratio:</h4> The optimization routine developed implements MATLAB’s fmincon solver and handles the Sharpe quadratic programming problem (QP) of portfolio volatility to return above the risk-free rate.  A time evolution of stock allocation results.</p>
-									<a href="assets/ConvexProject.pdf" class="read-more"><span>Read more ...</span> <i class="i fa fa-arrow-circle-right"></i></a>
-								</div>
-							</div>
-						</div>
-                        
-                        <div class="col-md-6">
-							<div class="service-item">
-								<span class="icon-pen service-icon"></span>
-								<div class="service-text">
-									<h3>Forecasting Financial Conditions</h3>
-									<p>Currently, co-authoring a Factor-Augmented Vector Autoregressive (FAVAR) paper with Drs. Marc Giannoni and Ernst Schaumburg. We implement a unique algorithm that restricts estimated macroeconomic and financial block factors to be orthogonal to each other and a FFR policy instrument.  I derived a sub-routine in our convergence algorithm to simultaneously check the null space of block factor loadings.</p>
-									<a href="assets/AGS_FCI/2016_AGS_FCI.pdf" class="read-more"><span>In-progress  ...</span> <i class="i fa fa-arrow-circle-right"></i></a>
-								</div>
-							</div>
-						</div>
-                        
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END SERVICES -->
-
-		<!-- WORKS -->
-		<div id="works" class="section works">
-			<div class="container">	
-			<div class="section-heading">
-				<h2>Personal</h2>
-				<p>passions that shape career and lifestyle</p>
-				<hr />
-			</div>
-				<div class="section-content">
-					<p align="center">When I’m not thinking of economic dynamic systems, I’m playing basketball or running through the streets of New York.  The entire city of New York is without comparison in terms of its diversity.  I have learned so much from the unique group of peers and colleagues I have met in New York.  A day at the park, Washington Square being my favorite, is an ideal location during the summer.  Debates over the meaning of life, or group dynamics, with close friends can be the most enjoyable portion of any trip out in public.  I look forward to a new community in graduate school.</p>		
-					</div>
-				</div>
-			</br>
-			</br>
-			</br>	
-			<div class="section-content">
-				<ul class="list-inline work-item-filters">
-					<!-- <li><a class="active" href="#" data-filter="*">ALL</a></li>
-					<li><a href="#" data-filter=".design">DESIGN</a></li>
-					<li><a href="#" data-filter=".home">OUTREACH</a></li>
-				    <li><a href="#" data-filter=".sport">SPORT</a></li>
-                    <li><a href="#" data-filter=".work">WORKING PROJECTS</a></li>
-					-->
-
-                    <!-- go with papers snip of graphs, design DLD and websites, travel photos
-                    passions for biking photos of certain things
-                    
-                    
-                    TO DO 
-                    make a flickr account and link each photo
-                    make a flickr icon for my profile
-                    in econ small description give links to research gate papers
-                    -->
-					
-				</ul>
-
-				<div class="work-item-wrapper">
-					<ul class="work-item-list list-col-4">
-						
-                       <li class="work-item sport">
-							<img src="assets/img/portfolio/CooperBasketball1.jpg" alt="Team chemistry and mentor-mentee relationships develop on the court and transcend into the classrooms. Photo (left to right):  Ratan Rai Sur, Grant Aarons, Anthony Adal, Joshua Mayourian">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/CooperBasketball2.jpg" class="media-popup" title="Teammates">
-									<div class="work-item-info">
-										<h3>Basketball</h3>
-										<p>Cooper Union Intercollegiate</p>
-										<i class="fa fa-search-plus"></i>
+						<ul class="actions">
+							<li><a href="https://scholar.google.co.uk/citations?user=7VO8bJAAAAAJ&hl=en" class="button">Google Scholar Portfolio</a></li>
+						</ul>
+				-->
+					</section>
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Open to discussions over email or coffee if you're in the neighborhood.  Please reach out, I check email often</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</a>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
 							</div>
-						</li>
-                       
-                       <li class="work-item sport">
-							<img src="assets/img/portfolio/BikeTravel1.jpg" alt="Whether its around New York City (above: Central Park) or around the world biking is my most relied on and enjoyabe mode of transportation.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/BikeTravel2.jpg" class="media-popup" title="Here to There">
-									<div class="work-item-info">
-										<h3>Biking</h3>
-										<p>Atop Mont Serrat, Tibidabo Temple in Barcelona Spain</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li>
-                        
-                       <li class="work-item sport">
-							<img src="assets/img/portfolio/Snowboard1.jpg" alt="Every winter during my undergraduate years I would travel to Mont Sutton in Quebec, Canada.  The Dean of Athletics, Stephen Baker, has been organizing the student/alumni trip for over 40 years.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/Snowboard2.jpg" class="media-popup" title="Winter Getaway">
-									<div class="work-item-info">
-										<h3>Snowboarding</h3>
-										<p>Began at 18 Years old on Canadian Slopes</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li>
-                       
-                       <li class="work-item design">
-							<img src="assets/img/portfolio/DLDdesign1.jpg" alt="Whether its around New York City (above: Central Park) or around the world biking is my most relied on and enjoyabe mode of transportation.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/DLDdesign2.mov" class="mfp-iframe media-popup" title="8X8 Frogger Game">
-									<div class="work-item-info">
-										<h3>Digital Logic Design</h3>
-										<p>Sketch of logic diagram</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li>
-                       
-                       <!-- <li class="work-item design">
-							<img src="assets/img/portfolio/Camarodesign1.jpg" alt="In a freshman course at the Cooper Union one of my most inspiring professors, Eric Lima, told the class to follow a tutorial for designing 3D car surfaces using 2D sketches.  The results were amazing, and the push to deliver was a major motivator, something I have since learned to put onto myself individually.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/Camarodesign2.jpg" class="media-popup" title="Undergraduate Dabbling">
-									<div class="work-item-info">
-										<h3>Camaro</h3>
-										<p>Creating the surface from 2D sketches</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                        <!-- <li class="work-item outreach">
-							<img src="assets/img/portfolio/RadioShow1.jpg" alt="Vice President, Dean of Students, and Dean of Athletics Stephen Baker would fly select members of the Cooper Union Basketball team to the island of Sint Maarten.  The members act as ambassadors to the United States collegiate system, helping teach young elementary aged children the fundamentals of basketball.  The basketball team captains go on local radio to spread the word on where and when the basketball clinic will be held.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/RadioShow2.jpg" class="media-popup" title="Basketball Clinic">
-									<div class="work-item-info">
-										<h3>Ambassador Program</h3>
-										<p>Sint Maarten Radio Program "Tropixx"</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-
-                         
-                       <!--<li class="work-item home">
-							<img src="assets/img/portfolio/NYCHome1.jpg" alt="The subway system in New York is eloborate, and very useful.  My lazy way of getting around, the subway helps when going to visit friends in Brooklyn or Queens.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/NYCHome2.jpg" class="media-popup" title="Local Knowledge">
-									<div class="work-item-info">
-										<h3>New York City</h3>
-										<p>Where my career took me</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                        
-                       <!-- <li class="work-item home">
-							<img src="assets/img/portfolio/CrotonHome1.jpg" alt="Source of great joy and relaxation.  It is on this river that I learned to sail, and it is along this coast that the best running takes place.  Here it is quiet and when running without music, you can actually hear your own breath and thoughts transpire, while getting a great runner's high.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/CrotonHome2.jpg" class="media-popup" title="Hudson River">
-									<div class="work-item-info">
-										<h3>Croton on Hudson</h3>
-										<p>The place I grew up</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                         
-                       <!-- <li class="work-item sport">
-							<img src="assets/img/portfolio/Baseball1.jpg" alt="It all comes down to getting out of bed early enough to practice.  When you live in Manhattan, baseball fields are not easy to come by.  At 6AM the Baseball team would assemble at the East River Park for our team batting and fielding practice.  'No gym, No fields, No equipment, No problem' - Dean Baker">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/Baseball2.jpg" class="media-popup" title="Work Ethic">
-									<div class="work-item-info">
-										<h3>Baseball</h3>
-										<p>Cooper Union Club Team</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                       <!-- <li class="work-item travel">
-							<img src="assets/img/portfolio/hotairballoon1.jpg" alt="Conquering fear of heights">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/hotairballoon2.jpg" class="media-popup" title="Floating Up High">
-									<div class="work-item-info">
-										<h3>Hot Air Balloon</h3>
-										<p>Flying High</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                       
-                       <!-- <li class="work-item travel">
-							<img src="assets/img/portfolio/EuroTravel1.jpg" alt="A nice cup of cappuccino in a perfect spot.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/EuroTravel2.jpg" class="media-popup" title="Hyde Park, London England">
-									<div class="work-item-info">
-										<h3>European Travels</h3>
-										<p>Walking the streets in Dublin Ireland</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                        
-                       <!-- <li class="work-item travel">
-							<img src="assets/img/portfolio/SanFranTravel1.jpg" alt="Sometimes you just have to visit good friends and have a great time listening to music.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/SanFranTravel2.jpg" class="media-popup" title="Music Festival">
-									<div class="work-item-info">
-										<h3>SanFrancisco Visit</h3>
-										<p>Entreprenuerial Hotbed</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                        
-                       
-                       <!-- <li class="work-item home">
-							<img src="assets/img/portfolio/CrotonPointPark1.jpg" alt="Trying to enjoy all the best parks and photo locations around town.  Alone time with the Cannon DSLR.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/CrotonPointPark2.jpg" class="media-popup" title="Pennisula in the Park">
-									<div class="work-item-info">
-										<h3>Croton Point Park</h3>
-										<p>Walking around the state park</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                       
-                       <!-- <li class="work-item home">
-							<img src="assets/img/portfolio/NYCSpot1.jpg" alt="Many place for work or play, it gets hard to choose which ropute to go everyday.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/NYCSpot2.jpg" class="media-popup" title="Central Park Boat House">
-									<div class="work-item-info">
-										<h3>New York Public Library</h3>
-										<p>Quiet study time</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li> -->
-                       
-                       <!-- <li class="work-item home">
-							<img src="assets/img/portfolio/CrotonDam1.jpg" alt="Did a project on this dam, and my favorite feature is the extended spillway at 1000ft long.  At the time of its completion it was the tallest dam in the world.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/CrotonDam2.jpg" class="media-popup" title="Relief Gates">
-									<div class="work-item-info">
-										<h3>Croton Dam</h3>
-										<p>Water spillway</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div>
-						</li>
-                        
-                       <!-- <li class="work-item design">
-							<img src="assets/img/portfolio/ARdesign1.jpg" alt="With use of existing software packages and specific code segments the overlay of 2 images simultaneously can be displayed.  In addition, this project achieved runtime switches of media overlay images.">
-							<div class="image-overlay">
-								<a href="assets/img/portfolio/ARdesign2.jpg" class="media-popup" title="Media Overlay through Phone Camera">
-									<div class="work-item-info">
-										<h3>Augmented Reality</h3>
-										<p>Android Software Technology</p>
-										<i class="fa fa-search-plus"></i>
-									</div>
-								</a>
-							</div> 
-						</li> -->
-                        
-                        
-                        
-                        
-                          
-                        
-						
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- END WORKS -->
-
-
-
-
-
-
-		<!-- CONTACT -->
-		<div id="contact" class="section contact">
-			<div class="section-heading">
-				<h2>GET IN TOUCH</h2>
-				<p>let's start a discussion
-                </p>
-				<hr />
-			</div>
-			<div class="section-content">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="contact-info">
-								<ul class="list-unstyled">
-									<!-- <li>
-										<i class="fa fa-map-marker pull-left"></i>
-										<h3>Address</h3>
-										<p>Greenwich Village<br />New York, NY</p>
-									</li> -->
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
 									<li>
-										<i class="fa fa-phone-square pull-left"></i>
-										<h3>Phone</h3>
-										<p>+1 914 703 0588</p>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										<!-- 1234 Somewhere Rd.<br /> -->
+										<!-- Nashville, TN 00000<br /> -->
+										St John's Wood, London </br>
+										United Kingdom
 									</li>
 									<li>
-										<i class="fa fa-envelope pull-left"></i>
-										<h3>Email</h3>
-										<p><a href="mailto:grantmaarons@gmail.com">grantmaarons@gmail.com</a></p>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										+44 7407-175-986
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="mailto:grantmaarons@gmail.com">grantmaarons@gmail.com</a>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-8">
-							<div class="contact-form">
-								<div class="alert"></div>
-								<form id="contact-form" method="post" role="form" novalidate>
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="sr-only" for="name">Name:</label>	
-												<input type="text" id="name" class="form-control" name="name" placeholder="Name*" required>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="sr-only" for="email">Email:</label>
-												<input type="email" id="email" class="form-control" name="email" placeholder="Email*" required>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="subject">Subject:</label>
-										<input type="text" id="subject" class="form-control" name="subject" placeholder="Subject">
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="message">Message:</label>
-										<textarea id="message" name="message" class="form-control" placeholder="Message*" required></textarea>
-									</div>
-									<button type="submit" class="btn btn-primary btn-lg" id="submit-button">
-										<i class="fa loading-icon"></i> <span>Send Message</span>
-									</button>
-									<input type="hidden" name="msg-submitted" id="msg-submitted" value="true"> 
-								</form>
+					</section>
+
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="6u 12u$(xsmall)">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END CONTACT -->
-        
-        
-        <!-- CONTACT -->
-		<div id="resume" class="section contact">
-			<div class="section-heading">
-				<h2>RESUME</h2>
-				<p>review the basics 	<div class="hero-buttons">
-											<a href="assets/resume.pdf" id="btn-about" class="btn btn-info btn-lg"><i class="fa fa-clipboard"></i> View PDF</a>
-								
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button special">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button special">Special</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button big">Big</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button special fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button special fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button special icon fa-download">Icon</a></li>
+								<li><a href="#" class="button icon fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button special disabled">Special</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
 										</div>
-                </p>
-				<hr />
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="4u$ 12u(small)">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="12u$">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row 50% uniform">
+									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
 			</div>
-			</br>
-            </br>
-            </br>
-            </br>
-            </br>
-            </br>
-		</div>
-		<!-- END CONTACT -->
 
-		<!-- TWITTER STREAM -->
-		<!-- 
-        <div id="twitter-stream" class="section twitter-stream">
-			<div class="container">
-				<div class="twitter-icon">
-					<i class="fa fa-twitter"></i>
-				</div>
-				<div id="tweet"></div>
-			</div>
-		</div>
-		<!-- TWITTER STREAM -->
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/gaarons" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://grantics.wordpress.com/" class="icon fa-wordpress"><span class="label">WordPress</span></a></li>
+					<li><a href="http://coffeetrails.tumblr.com/" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+					<li><a href="https://www.linkedin.com/in/grant-aarons-70743727" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:grantmaarons@gmail.com?Subject=Website%20Visitor" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Grant M Aarons</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
 
-	</div>
-	<!-- END MAIN CONTENT -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-	<!-- FOOTER -->
-	<footer id="footer" class="section">
-		<div class="container">
-			<p class="copyright pull-left">&copy; 2016. Grant Aarons. All Rights Reserved.</p> <!-- 2014. The Develovers. All Rights Reserved. -->
-		</div>
-	</footer>
-	<!-- END FOOTER -->
-
-	<div class="back-to-top">
-		<a href="#top"><i class="fa fa-chevron-up"></i></a>
-	</div>
-
-	<!-- JAVASCRIPT -->
-	<script src="assets/js/jquery-2.1.0.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-	<script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
-	<script src="assets/js/jquery.easing.min.js"></script>
-	<script src="assets/js/supersized.3.2.7.min.js"></script>
-	<script src="assets/js/supersized.shutter.min.js"></script>
-	<script src="assets/js/jquery.parallax-1.1.3.js"></script>	
-	<script src="assets/js/twitter-fetcher.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.js"></script>
-	<script src="assets/js/jquery.isotope.js"></script>
-	<script src="assets/js/wow.js"></script>
-	<script src="assets/js/jpreloader.js"></script>
-	<script src="assets/js/parsley.min.js"></script>
-	<script src="assets/js/jquery.easypiechart.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- Loops through the images on top slider -->
-	<script src="assets/js/loop.js"></script>
-</body>
+	</body>
 </html>
